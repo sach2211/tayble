@@ -61,7 +61,7 @@ Here,
 
 **classes**       = The CSS classes to apply to your project.
 
-**imageHeightPercent** = The height of image in %, if your data contain images.
+**imageHeight** = The height of image (if you have image column). Unit is vh by default. Don't specify a unit explicitly.
 
 
 
