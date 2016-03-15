@@ -20,6 +20,8 @@ The input has to be an array of arrays (i.e. a 2D array).
 
 ## Example:
 Example Usage :
+
+Include bootstrap.min.css in your project. You can use this link if you want https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
  
 Also import the module in your file :
 <pre>
