@@ -10,7 +10,7 @@ The features are :
 ## Installation :
 <pre>
 <code>
-    npm install react-table-responsive --save
+    npm install tayble --save
 </code>
 </pre>
 
@@ -20,14 +20,11 @@ The input has to be an array of arrays (i.e. a 2D array).
 
 ## Example:
 Example Usage :
-
-### Include the bootstrap.min.css file in your project.
-You can use the following link to use external stylesheet: <pre>https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css</pre>
  
 Also import the module in your file :
 <pre>
 <code>
-    import Table from 'react-table-responsive'
+    import Table from 'tayble'
 </pre>
 </code>
 
@@ -46,7 +43,7 @@ Then you can define the table as follows :
 
 <pre>    
 <code>
-    < Table columnNumbers = '4' rowNumbers = '2' columnHeaders = {headers} columnTypes = {types} rowData = {rows}/>
+    < Table columnNumbers = '4' columnHeaders = {headers} columnTypes = {types} rowData = {rows}/>
 
 </code>
 </pre>
@@ -54,8 +51,6 @@ Then you can define the table as follows :
 Here,
 
 **columnNumbers** = Number of Columns you need
-
-**rowNumbers**    = Number of rows
 
 **columnHeaders** = An array containing the headings for columns
 
@@ -70,6 +65,7 @@ Here,
 
 
 
-For any questions or suggestions , you can reach out to me via **email**.
+For any questions or suggestions , you can reach out to us.
+
 
 Thanks 
