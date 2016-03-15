@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "tayble",
   "version": "0.0.0",
-  "description": "A responsive table to use within your react apps. Can work with images as well as text",
+  "description": "React JS responsive tables. Can work with images as well as text",
   "main": "LeaderBoard.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +26,10 @@
     "redux-thunk": "^1.0.0",
     "yargs": "^3.18.0"
   },
+"repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/sach2211/tayble.git"
+  }
   "browserify": {
     "transform": [
       "babelify"
