@@ -31,8 +31,7 @@ Also import the module in your file :
 </code>
 
 Then  define data types, column headers and data for table and pass them as props to the component.
-<pre>
-<code>
+```javascript
 import React, { PropTypes } from 'react'
 import ReactDOM from 'react-dom'
 import Tayble from 'tayble'
@@ -63,8 +62,7 @@ class TaybleDemo extends React.Component {
 }
 
 ReactDOM.render(<TaybleDemo />, document.body);
- <code/>
-</pre>
+```
 
 Here, the props to be passes are :
 
