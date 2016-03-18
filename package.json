@@ -1,6 +1,6 @@
 {
   "name": "tayble",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React JS responsive tables. Can work with images as well as text",
   "main": "LeaderBoard.js",
   "scripts": {
