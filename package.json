@@ -14,14 +14,10 @@
   "author": "sach11 <sachin.chopra.best.@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "animate.css": "^3.4.0",
+    "babel-register": "^6.7.2",
     "babel": "^5.8.23",
     "body-parser": "^1.14.2",
-    "bootstrap": "^3.3.6",
-    "bootstrap-sass": "^3.3.5",
-    "compression": "^1.6.0",
     "react": "^0.14.0",
-    "react-document-meta": "^2.0.0",
     "react-dom": "^0.14.0",
     "redux-thunk": "^1.0.0",
     "yargs": "^3.18.0"
