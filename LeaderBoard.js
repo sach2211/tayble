@@ -1,16 +1,9 @@
+require("babel-register")
 import React, {Component, PropTypes} from 'react'
-export default class Fable extends Component {
-  static propTypes = {
-    columnHeaders : PropTypes.array,
-    rowData : PropTypes.array,
-    classes : PropTypes.string,
-    searchBox : PropTypes.string,
-    columnTypes : PropTypes.array,
-    highlight : PropTypes.array || PropTypes.number,
-    imageHeight : PropTypes.string
-  }
-  render() {
 
+export default class Tayble extends Component {
+  
+  render() {
 
     let { columnHeaders, rowData, classes, searchBox, columnTypes, highlight, imageClasses, imageHeight } = this.props
     if (!highlight) {
@@ -104,4 +97,13 @@ export default class Fable extends Component {
     );
   }
 }
+Tayble.propTypes = {
+  columnHeaders : PropTypes.array,
+  rowData : PropTypes.array,
+  classes : PropTypes.string,
+  searchBox : PropTypes.string,
+  columnTypes : PropTypes.array,
+  highlight : PropTypes.array || PropTypes.number,
+  imageHeight : PropTypes.string
 }
+export default Tayble;

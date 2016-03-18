@@ -26,31 +26,47 @@ Include bootstrap.min.css in your project. You can use this link if you want htt
 Also import the module in your file :
 <pre>
 <code>
-    import Table from 'tayble'
+    import Tayble from 'tayble'
 </pre>
 </code>
 
-Then  define data types, column headers and data for table as follows.
+Then  define data types, column headers and data for table and pass them as props to the component.
 <pre>
 <code>
-    var rows = [
-      ['1','2','3','4'],
-      ['8','7','6','5']
-    ]
-    var headers = ['Col1', 'Col2', 'Col3', 'Col4'];
-    var types = ['text', 'text', 'text', 'text'];
-</code>
+import React, { PropTypes } from 'react'
+import ReactDOM from 'react-dom'
+import Tayble from 'tayble'
+
+var taybleData = [
+  ['1', 'https://facebook.github.io/react/img/logo.svg','Steve Jobs','Apple Inc.','California'],
+  ['2', 'https://facebook.github.io/react/img/logo.svg','Bill Gates','Microsoft','Washington']
+]
+var columnHeaders = ['Serial ', 'Logo', 'Name', 'Company',  'Headquarters'];
+var columnTypes = ['text', 'image', 'text', 'text', 'text'];
+// React component
+class TaybleDemo extends React.Component {
+  render () {
+
+    return (
+      <div>
+        <Tayble 
+          columnNumbers = '5'  
+          columnHeaders = {columnHeaders} 
+          columnTypes = {columnTypes} 
+          rowData = {taybleData} 
+          classes= ' table table-responsive table-bordered table-striped '
+          imageHeight = '15'
+          imageClasses = 'img img-responsive'/>
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(<TaybleDemo />, document.body);
+ <code/>
 </pre>
-Then you can define the table as follows : 
 
-<pre>    
-<code>
-    < Table columnNumbers = '4' columnHeaders = {headers} columnTypes = {types} rowData = {rows}/>
-
-</code>
-</pre>
-
-Here,
+Here, the props to be passes are :
 
 **columnNumbers** = Number of Columns you need
 
@@ -64,6 +80,8 @@ Here,
 **classes**       = The CSS classes to apply to your project.
 
 **imageHeight** = The height of image (if you have image column). Unit is vh by default. Don't specify a unit explicitly.
+
+**imageClasses**= The CSS classes to apply on images (if one of your column is images)
 
 
 
