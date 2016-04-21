@@ -1,4 +1,3 @@
-require("babel-register")
 import React, {Component, PropTypes} from 'react'
 
 export default class Tayble extends Component {
